@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     default: siteConfig.title,
     template: `%s | ${siteConfig.name}`,
   },
-  description: siteConfig.description,
+  description: siteConfig.heroDescription,
   keywords: [
     "Physical AI",
     "Embodied Intelligence",
@@ -44,12 +44,12 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     siteName: siteConfig.name,
     title: siteConfig.title,
-    description: siteConfig.description,
+    description: siteConfig.heroDescription,
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.title,
-    description: siteConfig.description,
+    description: siteConfig.heroDescription,
   },
   robots: {
     index: true,

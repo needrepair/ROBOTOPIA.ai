@@ -9,7 +9,7 @@ export function Careers() {
     <Section id="careers" className="border-t border-white/5 bg-surface">
       <SectionHeader
         title="Build the Future of Physical AI"
-        subtitle="Join us in building the infrastructure that brings intelligence into the physical world."
+        subtitle="We are looking for exceptional researchers, engineers, and builders who are passionate about robotics and artificial intelligence."
       />
 
       <div className="mb-12">
@@ -21,7 +21,7 @@ export function Careers() {
           variants={fadeUp}
           className="text-xs font-medium tracking-[0.3em] text-muted uppercase"
         >
-          Open Roles
+          Open Positions
         </motion.p>
       </div>
 

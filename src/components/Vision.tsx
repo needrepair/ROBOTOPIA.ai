@@ -39,15 +39,24 @@ export function Vision() {
             variants={fadeUp}
             className="text-base leading-relaxed text-muted md:text-lg lg:text-xl"
           >
-            Robots today are trained for specific tasks in controlled environments.
+            Today&apos;s robots are designed for specific tasks in highly structured
+            environments.
           </motion.p>
           <motion.p
-            custom={0.35}
+            custom={0.3}
             variants={fadeUp}
             className="mt-6 text-base leading-relaxed text-white/80 md:text-lg lg:text-xl"
           >
-            We believe future robots should understand, reason about, and interact
-            with the physical world.
+            We believe future intelligent systems will understand objects, adapt to
+            changing environments, learn from interaction, and continuously improve
+            through real-world experience.
+          </motion.p>
+          <motion.p
+            custom={0.4}
+            variants={fadeUp}
+            className="mt-6 text-base font-light text-white md:text-lg"
+          >
+            ROBOTOPIA is building toward this future.
           </motion.p>
         </motion.div>
       </div>

@@ -65,13 +65,22 @@ export function Platform() {
             Flash 1.0 is ROBOTOPIA&apos;s embodied intelligence platform for data
             collection, model evaluation, and real-world deployment.
           </motion.p>
+          <motion.p
+            custom={0.35}
+            variants={fadeUp}
+            className="mt-6 text-base leading-relaxed text-white/70 md:text-lg"
+          >
+            Designed for rapid iteration across perception, planning, control, and
+            learning, Flash serves as the foundation for developing and validating
+            next-generation Physical AI systems.
+          </motion.p>
 
           <motion.div
-            custom={0.4}
+            custom={0.45}
             variants={fadeUp}
             className="mt-10 flex flex-wrap gap-3"
           >
-            {["Data Collection", "Model Evaluation", "Deployment"].map((tag) => (
+            {["Perception", "Planning", "Control", "Learning"].map((tag) => (
               <span
                 key={tag}
                 className="rounded-full border border-white/10 px-4 py-1.5 text-xs tracking-wide text-muted"
