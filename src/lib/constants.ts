@@ -57,14 +57,14 @@ export const teamMembers = [
   },
   {
     name: "Dong Wen",
-    role: "COO",
+    role: "Co-Founder & COO",
     bio: "Operations, supply chain, industrialization, business development, and commercialization.",
     detail:
       "Extensive experience in technology operations, manufacturing ecosystems, and bringing advanced technologies into real-world applications.",
   },
   {
-    name: "Prof. Fuyanwei",
-    role: "Chief Scientist",
+    name: "Prof. Yanwei Fu",
+    role: "Co-Founder & Chief Scientist",
     bio: "Causal representation learning, object-centric learning, 3D vision, and embodied intelligence.",
     detail:
       "Leading researcher in machine learning and computer vision, with long-term contributions to causal reasoning, visual representation learning, and intelligent systems.",
