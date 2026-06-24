@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import { LogoImage } from "@/components/ui/LogoImage";
 
 interface ButtonProps {
   href: string;
@@ -33,15 +33,8 @@ export function Button({ href, variant = "primary", children }: ButtonProps) {
 
 export function Logo() {
   return (
-    <a href="#" className="group flex items-center gap-3 transition-opacity hover:opacity-80">
-      <Image
-        src="/robotopia-logo.jpg"
-        alt="ROBOTOPIA"
-        width={120}
-        height={32}
-        className="h-7 w-auto md:h-8"
-        priority
-      />
+    <a href="#" className="flex shrink-0 items-center transition-opacity hover:opacity-80">
+      <LogoImage className="h-7 w-auto md:h-9" priority />
     </a>
   );
 }

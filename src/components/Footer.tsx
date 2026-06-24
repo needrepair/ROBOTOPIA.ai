@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import { LogoImage } from "@/components/ui/LogoImage";
 import { siteConfig } from "@/lib/constants";
 
 export function Footer() {
@@ -16,13 +16,7 @@ export function Footer() {
           className="grid gap-12 md:grid-cols-3"
         >
           <div>
-            <Image
-              src="/robotopia-logo.jpg"
-              alt="ROBOTOPIA"
-              width={140}
-              height={36}
-              className="h-8 w-auto"
-            />
+            <LogoImage className="h-9 w-auto" />
             <p className="body-text mt-4 max-w-sm text-sm">{siteConfig.tagline}</p>
           </div>
 
