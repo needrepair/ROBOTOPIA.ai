@@ -1,35 +1,23 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Section, fadeUp } from "@/components/ui/Section";
 
-function RobotPlaceholder() {
+function RobotImage() {
   return (
-    <div className="glass-card relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <svg
-          viewBox="0 0 200 280"
-          className="h-48 w-auto opacity-25 md:h-64"
-          aria-hidden="true"
-        >
-          <ellipse cx="100" cy="50" rx="35" ry="40" fill="none" stroke="#F8B233" strokeWidth="1" />
-          <rect x="70" y="85" width="60" height="80" rx="8" fill="none" stroke="#C8C8C8" strokeWidth="1" />
-          <line x1="70" y1="100" x2="40" y2="130" stroke="#C8C8C8" strokeWidth="1" />
-          <line x1="130" y1="100" x2="160" y2="130" stroke="#C8C8C8" strokeWidth="1" />
-          <circle cx="40" cy="130" r="8" fill="none" stroke="#C8C8C8" strokeWidth="1" />
-          <circle cx="160" cy="130" r="8" fill="none" stroke="#C8C8C8" strokeWidth="1" />
-          <line x1="85" y1="165" x2="75" y2="230" stroke="#C8C8C8" strokeWidth="1" />
-          <line x1="115" y1="165" x2="125" y2="230" stroke="#C8C8C8" strokeWidth="1" />
-          <rect x="60" y="230" width="30" height="12" rx="4" fill="none" stroke="#C8C8C8" strokeWidth="1" />
-          <rect x="110" y="230" width="30" height="12" rx="4" fill="none" stroke="#C8C8C8" strokeWidth="1" />
-          <circle cx="88" cy="45" r="6" fill="none" stroke="#F8B233" strokeWidth="1" />
-          <circle cx="112" cy="45" r="6" fill="none" stroke="#F8B233" strokeWidth="1" />
-        </svg>
-      </div>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(248,178,51,0.06)_0%,transparent_70%)]" />
-      <p className="absolute bottom-6 left-0 right-0 text-center text-xs tracking-[0.2em] text-silver-dark uppercase">
-        Robot Preview
-      </p>
+    <div className="glass-card group relative aspect-[3/4] w-full overflow-hidden rounded-2xl">
+      <Image
+        src="/robot.png"
+        alt="ROBOTOPIA embodied intelligence robot"
+        fill
+        className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        priority={false}
+      />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(0,0,0,0.4)_100%)]" />
+      <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
     </div>
   );
 }
@@ -86,7 +74,7 @@ export function Platform() {
           custom={0.2}
           variants={fadeUp}
         >
-          <RobotPlaceholder />
+          <RobotImage />
         </motion.div>
       </div>
     </Section>
