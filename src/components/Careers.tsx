@@ -6,26 +6,19 @@ import { openRoles, siteConfig } from "@/lib/constants";
 
 export function Careers() {
   return (
-    <Section id="careers" className="border-t border-white/5 bg-surface">
+    <Section id="careers" className="border-t border-white/[0.08] bg-secondary">
       <SectionHeader
         title="Build the Future of Physical AI"
         subtitle="We are looking for exceptional researchers, engineers, and builders who are passionate about robotics and artificial intelligence."
       />
 
       <div className="mb-12">
-        <motion.p
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          custom={0}
-          variants={fadeUp}
-          className="text-xs font-medium tracking-[0.3em] text-muted uppercase"
-        >
+        <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0} variants={fadeUp} className="section-label">
           Open Positions
         </motion.p>
       </div>
 
-      <div className="divide-y divide-white/5 border-y border-white/5">
+      <div className="divide-y divide-white/[0.08] border-y border-white/[0.08]">
         {openRoles.map((role, i) => (
           <motion.a
             key={role}
@@ -37,10 +30,10 @@ export function Careers() {
             variants={fadeUp}
             className="group flex items-center justify-between py-6 transition-colors duration-300 hover:bg-white/[0.02] md:py-8"
           >
-            <span className="text-base font-light text-white transition-colors group-hover:text-white md:text-xl">
+            <span className="text-base font-light text-silver-light transition-colors group-hover:text-orange md:text-xl">
               {role}
             </span>
-            <span className="flex items-center gap-2 text-sm text-muted transition-colors group-hover:text-white">
+            <span className="flex items-center gap-2 text-sm text-silver-dark transition-colors group-hover:text-orange">
               Apply
               <svg
                 viewBox="0 0 16 16"

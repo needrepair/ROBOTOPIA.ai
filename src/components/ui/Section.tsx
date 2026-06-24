@@ -42,7 +42,7 @@ export function SectionHeader({ title, subtitle, delay = 0 }: SectionHeaderProps
       <motion.h2
         custom={delay}
         variants={fadeUp}
-        className="text-3xl font-light tracking-tight text-white md:text-5xl lg:text-6xl"
+        className="heading-display text-3xl md:text-5xl lg:text-6xl"
       >
         {title}
       </motion.h2>
@@ -50,7 +50,7 @@ export function SectionHeader({ title, subtitle, delay = 0 }: SectionHeaderProps
         <motion.p
           custom={delay + 0.1}
           variants={fadeUp}
-          className="mt-6 max-w-2xl text-base leading-relaxed text-muted md:text-lg"
+          className="body-text mt-6 max-w-2xl text-base md:text-lg"
         >
           {subtitle}
         </motion.p>

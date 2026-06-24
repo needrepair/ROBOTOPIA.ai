@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { siteConfig } from "@/lib/constants";
 
 interface ButtonProps {
   href: string;
@@ -14,9 +14,9 @@ export function Button({ href, variant = "primary", children }: ButtonProps) {
     "inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-medium tracking-wide transition-all duration-300";
   const variants = {
     primary:
-      "bg-white text-black hover:bg-white/90 hover:scale-[1.02] active:scale-[0.98]",
+      "bg-orange text-black hover:bg-orange-light hover:shadow-orange-glow active:scale-[0.98]",
     secondary:
-      "border border-white/20 bg-transparent text-white hover:border-white/40 hover:bg-white/5",
+      "border border-white/10 bg-transparent text-silver-light hover:border-orange/40 hover:text-silver-light hover:bg-white/[0.03]",
   };
 
   return (
@@ -33,11 +33,15 @@ export function Button({ href, variant = "primary", children }: ButtonProps) {
 
 export function Logo() {
   return (
-    <a
-      href="#"
-      className="text-sm font-medium tracking-[0.2em] text-white transition-opacity hover:opacity-70"
-    >
-      {siteConfig.name}
+    <a href="#" className="group flex items-center gap-3 transition-opacity hover:opacity-80">
+      <Image
+        src="/robotopia-logo.jpg"
+        alt="ROBOTOPIA"
+        width={120}
+        height={32}
+        className="h-7 w-auto md:h-8"
+        priority
+      />
     </a>
   );
 }

@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --bg-primary: #000000;
+    --bg-secondary: #0a0a0a;
+    --surface: #111111;
+    --robotopia-orange: #f8b233;
+    --robotopia-orange-light: #ffc14d;
+    --robotopia-orange-glow: rgba(248, 178, 51, 0.25);
+    --robotopia-silver: #c8c8c8;
+    --robotopia-silver-light: #e5e5e5;
+    --robotopia-silver-dark: #8a8a8a;
+  }
+
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -10,11 +22,32 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-silver;
   }
 
   ::selection {
-    @apply bg-white/20 text-white;
+    background: rgba(248, 178, 51, 0.3);
+    color: #fff;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+  }
+
+  .section-label {
+    @apply text-xs font-medium uppercase tracking-[0.3em] text-orange;
+  }
+
+  .heading-display {
+    @apply font-light tracking-tight text-silver-light;
+  }
+
+  .body-text {
+    @apply leading-relaxed text-silver-dark;
   }
 }
 
@@ -29,5 +62,15 @@
 
   .container-max {
     @apply mx-auto max-w-6xl;
+  }
+
+  .hero-gradient {
+    background:
+      radial-gradient(
+        circle at center,
+        rgba(248, 178, 51, 0.08),
+        transparent 60%
+      ),
+      #000;
   }
 }

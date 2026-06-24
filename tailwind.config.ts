@@ -10,21 +10,32 @@ const config: Config = {
     extend: {
       colors: {
         background: "#000000",
-        foreground: "#ffffff",
-        muted: "#888888",
-        border: "#1a1a1a",
-        surface: "#0a0a0a",
+        foreground: "#E5E5E5",
+        muted: "#8A8A8A",
+        border: "rgba(255,255,255,0.08)",
+        surface: "#111111",
+        secondary: "#0A0A0A",
+        orange: {
+          DEFAULT: "#F8B233",
+          light: "#FFC14D",
+          glow: "rgba(248,178,51,0.25)",
+        },
+        silver: {
+          DEFAULT: "#C8C8C8",
+          light: "#E5E5E5",
+          dark: "#8A8A8A",
+        },
       },
       fontFamily: {
         sans: [
-          "var(--font-geist-sans)",
-          "system-ui",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
+          "var(--font-inter)",
+          "SF Pro Display",
+          "Helvetica Neue",
           "sans-serif",
         ],
-        mono: ["var(--font-geist-mono)", "monospace"],
+      },
+      boxShadow: {
+        "orange-glow": "0 0 30px rgba(248,178,51,0.3)",
       },
       animation: {
         "fade-in": "fadeIn 0.8s ease-out forwards",

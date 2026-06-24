@@ -16,10 +16,10 @@ const fadeUp = {
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section className="hero-gradient relative flex min-h-screen items-center justify-center overflow-hidden">
       <AnimatedBackground />
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black" />
 
       <div className="container-max relative z-10 px-6 pt-32 pb-24 md:px-12 lg:px-24">
         <motion.div
@@ -30,15 +30,15 @@ export function Hero() {
           <motion.p
             custom={0}
             variants={fadeUp}
-            className="mb-6 text-xs font-medium tracking-[0.3em] text-muted uppercase"
+            className="section-label mb-6"
           >
-            {siteConfig.name}
+            Physical AI Infrastructure
           </motion.p>
 
           <motion.h1
             custom={0.1}
             variants={fadeUp}
-            className="text-balance text-4xl font-light leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+            className="heading-display text-balance text-4xl leading-[1.1] sm:text-5xl md:text-6xl lg:text-7xl"
           >
             Bring Intelligence into the Physical World
           </motion.h1>
@@ -46,7 +46,7 @@ export function Hero() {
           <motion.p
             custom={0.2}
             variants={fadeUp}
-            className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg"
+            className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-silver md:text-lg"
           >
             {siteConfig.description}
           </motion.p>
@@ -54,7 +54,7 @@ export function Hero() {
           <motion.p
             custom={0.3}
             variants={fadeUp}
-            className="mx-auto mt-6 max-w-3xl text-sm leading-relaxed text-muted md:text-base"
+            className="body-text mx-auto mt-6 max-w-3xl text-sm md:text-base"
           >
             {siteConfig.heroDescription}
           </motion.p>
@@ -85,10 +85,10 @@ export function Hero() {
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
           className="flex flex-col items-center gap-2"
         >
-          <span className="text-[10px] tracking-[0.2em] text-muted uppercase">
+          <span className="text-[10px] tracking-[0.2em] text-silver-dark uppercase">
             Scroll
           </span>
-          <div className="h-8 w-px bg-gradient-to-b from-white/40 to-transparent" />
+          <div className="h-8 w-px bg-gradient-to-b from-orange/50 to-transparent" />
         </motion.div>
       </motion.div>
     </section>

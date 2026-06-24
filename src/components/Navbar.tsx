@@ -28,7 +28,9 @@ export function Navbar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 z-50 w-full transition-all duration-500 ${
-        scrolled ? "border-b border-white/5 bg-black/80 backdrop-blur-xl" : "bg-transparent"
+        scrolled
+          ? "border-b border-white/[0.08] bg-black/80 backdrop-blur-xl"
+          : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 md:px-12 lg:px-24">
@@ -39,7 +41,7 @@ export function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-muted transition-colors duration-300 hover:text-white"
+                className="text-sm text-silver-dark transition-colors duration-300 hover:text-orange"
               >
                 {link.label}
               </a>
@@ -55,12 +57,12 @@ export function Navbar() {
           className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
         >
           <span
-            className={`block h-px w-5 bg-white transition-all duration-300 ${
+            className={`block h-px w-5 bg-silver-light transition-all duration-300 ${
               menuOpen ? "translate-y-[3.5px] rotate-45" : ""
             }`}
           />
           <span
-            className={`block h-px w-5 bg-white transition-all duration-300 ${
+            className={`block h-px w-5 bg-silver-light transition-all duration-300 ${
               menuOpen ? "-translate-y-[3.5px] -rotate-45" : ""
             }`}
           />
@@ -87,7 +89,7 @@ export function Navbar() {
                   <a
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className="text-2xl font-light text-white"
+                    className="text-2xl font-light text-silver-light"
                   >
                     {link.label}
                   </a>
