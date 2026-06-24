@@ -3,14 +3,16 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Section, fadeUp } from "@/components/ui/Section";
+import { assetUrl } from "@/lib/base-path";
 
 function RobotImage() {
   return (
     <div className="glass-card group relative aspect-[3/4] w-full overflow-hidden rounded-2xl">
       <Image
-        src="/robot.png"
+        src={assetUrl("/robot.png")}
         alt="ROBOTOPIA embodied intelligence robot"
         fill
+        unoptimized
         className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
         sizes="(max-width: 1024px) 100vw, 50vw"
         priority={false}
