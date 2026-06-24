@@ -44,15 +44,23 @@ export function Hero() {
           </motion.h1>
 
           <motion.p
-            custom={0.25}
+            custom={0.2}
             variants={fadeUp}
-            className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-muted md:text-lg lg:text-xl"
+            className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg"
           >
             {siteConfig.description}
           </motion.p>
 
+          <motion.p
+            custom={0.3}
+            variants={fadeUp}
+            className="mx-auto mt-6 max-w-3xl text-sm leading-relaxed text-muted md:text-base"
+          >
+            {siteConfig.heroDescription}
+          </motion.p>
+
           <motion.div
-            custom={0.4}
+            custom={0.45}
             variants={fadeUp}
             className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
@@ -64,25 +72,25 @@ export function Hero() {
             </Button>
           </motion.div>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 1 }}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            className="flex flex-col items-center gap-2"
-          >
-            <span className="text-[10px] tracking-[0.2em] text-muted uppercase">
-              Scroll
-            </span>
-            <div className="h-8 w-px bg-gradient-to-b from-white/40 to-transparent" />
-          </motion.div>
-        </motion.div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 1 }}
+        className="absolute bottom-12 left-1/2 z-10 -translate-x-1/2"
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+          className="flex flex-col items-center gap-2"
+        >
+          <span className="text-[10px] tracking-[0.2em] text-muted uppercase">
+            Scroll
+          </span>
+          <div className="h-8 w-px bg-gradient-to-b from-white/40 to-transparent" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
