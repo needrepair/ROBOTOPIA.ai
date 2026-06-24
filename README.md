@@ -14,17 +14,39 @@ Modern landing page for **ROBOTOPIA** — building the next generation Physical 
 
 ### Prerequisites
 
-- Node.js 20+
+- Node.js 20+（已安装：`C:\Program Files\nodejs`）
 - npm
 
-### Installation
+### 本地预览（Windows 一键启动）
 
-```bash
+**方式一：双击运行**
+
+```
+dev.bat
+```
+
+**方式二：PowerShell**
+
+```powershell
+.\dev.ps1
+```
+
+**方式三：Cursor / VS Code**
+
+按 `Ctrl+Shift+B` 运行默认任务 **dev: install & preview**
+
+浏览器打开 [http://localhost:3000](http://localhost:3000)
+
+### 手动启动
+
+若终端找不到 `npm`，先刷新 PATH 或使用完整路径：
+
+```powershell
+$env:Path = "C:\Program Files\nodejs;" + $env:Path
+cd C:\Users\qq196\Documents\ROBOTOPIA.ai
 npm install
 npm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) to view the site.
 
 ### Build
 
