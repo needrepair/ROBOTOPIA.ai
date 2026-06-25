@@ -49,7 +49,7 @@ export const teamMembers = [
       "Led the development of multiple embodied AI systems from concept to demonstration, with experience spanning perception, control, sensing, data collection, and robotic system integration.",
   },
   {
-    name: "Dr. W",
+    name: "Dr. Leo",
     role: "Co-Founder & CTO",
     bio: "World models, robot learning, UMI data collection systems, VLA/WAM pretraining, and large-scale embodied AI infrastructure.",
     detail:
