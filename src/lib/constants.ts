@@ -5,8 +5,10 @@ export const siteConfig = {
     "Building the next generation Physical AI infrastructure for embodied intelligence.",
   heroDescription:
     "ROBOTOPIA is developing foundational technologies that enable robots to understand, reason about, and interact with the physical world. By integrating data, models, and robotic systems, we are building the infrastructure for the next generation of embodied intelligence.",
-  url: "https://needrepair.github.io/ROBOTOPIA.ai",
-  email: "linsy25@m.fudan.edu.cn",
+  url: "https://robotopia-ai.com",
+  email: "market@robotopia-ai.cn",
+  marketEmail: "market@robotopia-ai.cn",
+  hrEmail: "hr@robotopia-ai.cn",
   tagline: "Building Physical AI Infrastructure for the Real World.",
   address: {
     line1: "Shanghai Future Intelligence Center",
@@ -42,11 +44,11 @@ export const technologyCards = [
 
 export const teamMembers = [
   {
-    name: "Dr. L",
+    name: "Dr. Leo",
     role: "Founder & CEO",
     bio: "World models, robot learning, UMI data collection systems, VLA/WAM pretraining, and large-scale embodied AI infrastructure.",
     detail:
-      "Focused on building scalable learning systems that connect data, simulation, and real-world robotic execution.",
+      "Focused on building scalable learning systems that connect data,model training, and real-world robotic execution.",
   },
 
 

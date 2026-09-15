@@ -29,10 +29,16 @@ export function Footer() {
           <div className="text-sm">
             <p className="mb-2 text-silver-dark">Email</p>
             <a
-              href={`mailto:${siteConfig.email}`}
-              className="text-silver-light transition-colors hover:text-orange"
+              href={`mailto:${siteConfig.marketEmail}`}
+              className="block text-silver-light transition-colors hover:text-orange"
             >
-              {siteConfig.email}
+              {siteConfig.marketEmail}
+            </a>
+            <a
+              href={`mailto:${siteConfig.hrEmail}`}
+              className="mt-1 block text-silver-light transition-colors hover:text-orange"
+            >
+              {siteConfig.hrEmail}
             </a>
           </div>
         </motion.div>

@@ -64,7 +64,7 @@ export function Hero() {
             variants={fadeUp}
             className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
-            <Button href={`mailto:${siteConfig.email}`} variant="primary">
+            <Button href={`mailto:${siteConfig.marketEmail}`} variant="primary">
               Contact Us
             </Button>
             <Button href="#careers" variant="secondary">

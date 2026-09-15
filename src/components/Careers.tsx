@@ -22,7 +22,7 @@ export function Careers() {
         {openRoles.map((role, i) => (
           <motion.a
             key={role}
-            href={`mailto:${siteConfig.email}?subject=Application: ${encodeURIComponent(role)}`}
+            href={`mailto:${siteConfig.hrEmail}?subject=Application: ${encodeURIComponent(role)}`}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-40px" }}
