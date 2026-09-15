@@ -42,19 +42,22 @@ export const technologyCards = [
 
 export const teamMembers = [
   {
-    name: "Siyu Lin",
-    role: "Founder & CEO",
-    bio: "Full-stack embodied AI systems, robotics engineering, company strategy, and real-world deployment.",
-    detail:
-      "Led the development of multiple embodied AI systems from concept to demonstration, with experience spanning perception, control, sensing, data collection, and robotic system integration.",
-  },
-  {
     name: "Dr. L",
-    role: "Co-Founder & CTO",
+    role: "Founder & CEO",
     bio: "World models, robot learning, UMI data collection systems, VLA/WAM pretraining, and large-scale embodied AI infrastructure.",
     detail:
       "Focused on building scalable learning systems that connect data, simulation, and real-world robotic execution.",
   },
+
+
+  {
+    name: "Siyu Lin",
+    role: "Co-Founder & CTO",
+    bio: "Full-stack embodied AI systems, robotics engineering, company strategy, and real-world deployment.",
+    detail:
+      "Led the development of multiple embodied AI systems from concept to demonstration, with experience spanning perception, control, sensing, data collection, and robotic system integration.",
+  },
+
   {
     name: "Dong Wen",
     role: "Co-Founder & COO",
