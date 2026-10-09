@@ -6,9 +6,9 @@ export const siteConfig = {
   heroDescription:
     "ROBOTOPIA is developing foundational technologies that enable robots to understand, reason about, and interact with the physical world. By integrating data, models, and robotic systems, we are building the infrastructure for the next generation of embodied intelligence.",
   url: "https://robotopia-ai.com",
-  email: "market@robotopia-ai.cn",
-  marketEmail: "market@robotopia-ai.cn",
-  hrEmail: "hr@robotopia-ai.cn",
+  email: "hr@robotopia-ai.com",
+  marketEmail: "hr@robotopia-ai.com",
+  hrEmail: "hr@robotopia-ai.com",
   tagline: "Building Physical AI Infrastructure for the Real World.",
   address: {
     line1: "Shanghai Future Intelligence Center",
@@ -20,7 +20,6 @@ export const navLinks = [
   { label: "Vision", href: "#vision" },
   { label: "Technology", href: "#technology" },
   { label: "Platform", href: "#platform" },
-  { label: "Team", href: "#team" },
   { label: "Careers", href: "#careers" },
 ] as const;
 
@@ -39,40 +38,6 @@ export const technologyCards = [
     title: "Embodied Platform",
     description:
       "Creating integrated robotic platforms that bridge perception, planning, and real-world execution.",
-  },
-] as const;
-
-export const teamMembers = [
-  {
-    name: "Dr. Leo",
-    role: "Founder & CEO",
-    bio: "World models, robot learning, UMI data collection systems, VLA/WAM pretraining, and large-scale embodied AI infrastructure.",
-    detail:
-      "Focused on building scalable learning systems that connect data,model training, and real-world robotic execution.",
-  },
-
-
-  {
-    name: "Siyu Lin",
-    role: "Co-Founder & CTO",
-    bio: "Full-stack embodied AI systems, robotics engineering, company strategy, and real-world deployment.",
-    detail:
-      "Led the development of multiple embodied AI systems from concept to demonstration, with experience spanning perception, control, sensing, data collection, and robotic system integration.",
-  },
-
-  {
-    name: "Dong Wen",
-    role: "Co-Founder & COO",
-    bio: "Operations, supply chain, industrialization, business development, and commercialization.",
-    detail:
-      "Extensive experience in technology operations, manufacturing ecosystems, and bringing advanced technologies into real-world applications.",
-  },
-  {
-    name: "Prof. Yanwei Fu",
-    role: "Co-Founder & Chief Scientist",
-    bio: "Causal representation learning, object-centric learning, 3D vision, and embodied intelligence.",
-    detail:
-      "Leading researcher in machine learning and computer vision, with long-term contributions to causal reasoning, visual representation learning, and intelligent systems.",
   },
 ] as const;
 
